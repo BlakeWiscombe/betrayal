@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Textures/Floor.jpg" type="Texture" id=1]
 [ext_resource path="res://wooden wall.jpg" type="Texture" id=2]
@@ -22,6 +22,9 @@ albedo_texture = ExtResource( 2 )
 uv1_scale = Vector3( 20, 20, 20 )
 uv1_offset = Vector3( 20, 0, 0 )
 
+[sub_resource type="ConcavePolygonShape" id=6]
+data = PoolVector3Array( -10, -7.5, 0, -10, 7.5, 0, 10, 7.5, 0, -10, -7.5, 0, 10, 7.5, 0, 10, -7.5, 0 )
+
 [node name="Betrayal" type="Spatial"]
 
 [node name="Floor" type="MeshInstance" parent="."]
@@ -42,3 +45,18 @@ shadow_color = Color( 1, 1, 1, 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.52982, 10.0186 )
 mesh = SubResource( 4 )
 material/0 = SubResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+shape = SubResource( 6 )
+
+[node name="MeshInstance" type="MeshInstance" parent="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0837431, -20.2711 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance/MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/MeshInstance/StaticBody"]
+shape = SubResource( 6 )
