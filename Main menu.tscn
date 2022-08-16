@@ -4,8 +4,15 @@
 
 [node name="Main menu" type="Node2D"]
 
-[node name="Button" type="Button" parent="."]
-margin_right = 12.0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_right = 105.0
 margin_bottom = 20.0
 text = "Start game"
 script = ExtResource( 1 )
@@ -13,4 +20,25 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[node name="Button2" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 105.0
+margin_bottom = 44.0
+text = "Mission select"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 105.0
+margin_bottom = 68.0
+text = "Options"
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+margin_top = 72.0
+margin_right = 105.0
+margin_bottom = 92.0
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
