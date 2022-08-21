@@ -1,3 +1,11 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.75
+height = 1.75
 
 [node name="KinematicBody" type="KinematicBody"]
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, -4.17298, -0.0682545, 6.88459 )
+shape = SubResource( 1 )
