@@ -25,7 +25,7 @@ scene_to_load = "res://Betrayal.tscn"
 margin_top = 24.0
 margin_right = 105.0
 margin_bottom = 44.0
-text = "Mission select"
+text = "Mission Select"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -41,4 +41,5 @@ margin_top = 72.0
 margin_right = 105.0
 margin_bottom = 92.0
 text = "Quit"
+
 [connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_Button_pressed"]
