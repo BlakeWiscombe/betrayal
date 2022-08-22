@@ -26,6 +26,7 @@ uv1_offset = Vector3( 20, 0, 0 )
 data = PoolVector3Array( -10, -7.5, 0, -10, 7.5, 0, 10, 7.5, 0, -10, -7.5, 0, 10, 7.5, 0, 10, -7.5, 0 )
 
 [node name="Betrayal" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6751, -0.338668, -11.5542 )
 
 [node name="Floor" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
