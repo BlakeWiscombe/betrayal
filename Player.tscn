@@ -13,4 +13,6 @@ transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, -4.1729
 shape = SubResource( 1 )
 
 [node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0 )
 environment = ExtResource( 1 )
+current = true
