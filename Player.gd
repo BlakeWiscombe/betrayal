@@ -2,8 +2,8 @@ extends KinematicBody
 
 
 # Physics
-var movementSpeed = 1.0 		# How fast the player can move.
-var jumpStrength = 1.0 		# How much force used to make player jump
+var movementSpeed = 10.0 		# How fast the player can move.
+var jumpStrength = 2.0 		# How much force used to make player jump
 var gravity = 10.0			# Gravity's strength.
 
 
@@ -14,7 +14,7 @@ func _ready():
 # cam look
 var minCamVerticalAngle = -90.0		# Limit camera view to straight down.
 var maxCamVerticalAngle = 90.0		# Limit camera view to straight up.
-var lookSensitivity = 0.5			# How fast camera moves. 'mouse sensitivity'. 
+var lookSensitivity = 1.0			# How fast camera moves. 'mouse sensitivity'. 
 
 # vectors
 var playerVelocity : Vector3 = Vector3() 	# Players Velocity
