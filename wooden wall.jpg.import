@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/wooden wall.jpg-46c0667c67e57b5ae29c209ff7e47454.s3tc.stex"
-path.etc2="res://.import/wooden wall.jpg-46c0667c67e57b5ae29c209ff7e47454.etc2.stex"
+path.s3tc="res://.import/wooden wall.jpg-d1837e4bc058a6dcc8fefbc00cfc5983.s3tc.stex"
+path.etc2="res://.import/wooden wall.jpg-d1837e4bc058a6dcc8fefbc00cfc5983.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/wooden wall.jpg"
-dest_files=[ "res://.import/wooden wall.jpg-46c0667c67e57b5ae29c209ff7e47454.s3tc.stex", "res://.import/wooden wall.jpg-46c0667c67e57b5ae29c209ff7e47454.etc2.stex" ]
+source_file="res://wooden wall.jpg"
+dest_files=[ "res://.import/wooden wall.jpg-d1837e4bc058a6dcc8fefbc00cfc5983.s3tc.stex", "res://.import/wooden wall.jpg-d1837e4bc058a6dcc8fefbc00cfc5983.etc2.stex" ]
 
 [params]
 

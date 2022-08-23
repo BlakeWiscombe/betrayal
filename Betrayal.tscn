@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Textures/Floor.jpg" type="Texture" id=1]
+[ext_resource path="res://Floor.jpg" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://wooden wall.jpg" type="Texture" id=3]
 
 [sub_resource type="QuadMesh" id=9]
 size = Vector2( 50, 40 )
@@ -11,6 +12,15 @@ albedo_texture = ExtResource( 1 )
 
 [sub_resource type="ConcavePolygonShape" id=11]
 data = PoolVector3Array( -25, -20, 0, -25, 20, 0, 25, 20, 0, -25, -20, 0, 25, 20, 0, 25, -20, 0 )
+
+[sub_resource type="PlaneMesh" id=14]
+size = Vector2( 160, 75 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="ConcavePolygonShape" id=15]
+data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, -50, 75, 0, -50 )
 
 [sub_resource type="QuadMesh" id=4]
 size = Vector2( 50, 40 )
@@ -24,14 +34,39 @@ data = PoolVector3Array( -25, -20, 0, -25, 20, 0, 25, 20, 0, -25, -20, 0, 25, 20
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 150, 100 )
 
-[sub_resource type="SpatialMaterial" id=13]
-albedo_texture = ExtResource( 1 )
+[sub_resource type="SpatialMaterial" id=18]
+albedo_texture = ExtResource( 3 )
 
 [sub_resource type="ConcavePolygonShape" id=12]
 data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, -50, 75, 0, -50 )
 
+[sub_resource type="SpatialMaterial" id=17]
+albedo_texture = ExtResource( 3 )
+
 [node name="Betrayal" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6751, -0.338668, -11.5542 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.998776, -0.0494601, 0, 0.0494601, -0.998776, 49.6664, 17.6344, 47.518 )
+mesh = SubResource( 9 )
+skeleton = NodePath("../MeshInstance2")
+material/0 = SubResource( 10 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance8"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance8/StaticBody"]
+shape = SubResource( 11 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="."]
+transform = Transform( 0.999618, -0.0272983, -0.00371178, -0.0271649, -0.954242, -0.297784, 0.00458705, 0.297771, -0.954621, -1.94182, 46.0904, -33.1205 )
+mesh = SubResource( 14 )
+skeleton = NodePath("../MeshInstance6")
+material/0 = SubResource( 16 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance7"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance7/StaticBody"]
+shape = SubResource( 15 )
 
 [node name="MeshInstance5" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.999062, -0.0432882, 0, 0.0432882, -0.999062, -49.6088, 18.4803, 48.1633 )
@@ -68,7 +103,7 @@ shape = SubResource( 8 )
 
 [node name="Floor" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
-material/0 = SubResource( 13 )
+material/0 = SubResource( 18 )
 
 [node name="StaticBody" type="StaticBody" parent="Floor"]
 
@@ -80,7 +115,7 @@ transform = Transform( 1, 0, 0, 0, -0.0012217, 0.999999, 0, -0.999999, -0.001221
 shadow_enabled = true
 shadow_color = Color( 1, 1, 1, 1 )
 
-[node name="KinematicBody" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05459, 4.32295, 2.41159 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
@@ -102,3 +137,13 @@ material/0 = SubResource( 10 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance2/StaticBody"]
 shape = SubResource( 11 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="."]
+transform = Transform( 0.999242, 0.00191486, 0.038879, -0.0152264, -0.89998, 0.435665, 0.0358245, -0.435927, -0.899269, -0.499317, 42.3182, 33.1886 )
+mesh = SubResource( 14 )
+material/0 = SubResource( 17 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance6"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance6/StaticBody"]
+shape = SubResource( 15 )
