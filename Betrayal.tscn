@@ -44,7 +44,7 @@ data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, 
 albedo_texture = ExtResource( 3 )
 
 [node name="Betrayal" type="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.6751, -0.338668, -11.5542 )
+transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
 
 [node name="MeshInstance8" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.998776, -0.0494601, 0, 0.0494601, -0.998776, 49.6664, 17.6344, 47.518 )
