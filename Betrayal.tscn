@@ -19,18 +19,26 @@ data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, 
 [node name="Betrayal" type="Spatial"]
 transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
 
-[node name="CSGBox4" type="CSGBox" parent="."]
-transform = Transform( 0.999993, 0, -2.91038e-11, 0, 1, 0, 2.91038e-11, 0, 0.999993, 53.6604, 7.86247, -49.0069 )
+[node name="CSGBox6" type="CSGBox" parent="."]
+transform = Transform( 0.999972, 0, -8.73115e-11, 0, 1, 0, 8.73115e-11, 0, 0.999972, -30.0805, 7.81307, -48.7859 )
 use_collision = true
-width = 42.508
+width = 41.9662
 height = 15.984
 depth = 1.77
 material = SubResource( 19 )
 
-[node name="CSGBox4" type="CSGBox" parent="CSGBox4"]
-transform = Transform( 0.999993, 0, -2.91038e-11, 0, 1, 0, 2.91038e-11, 0, 0.999993, -42.158, -0.00230026, -0.0144768 )
+[node name="CSGBox5" type="CSGBox" parent="."]
+transform = Transform( 0.999987, 0, -2.91038e-11, 0, 1, 0, 2.91038e-11, 0, 0.999987, 11.5027, 7.86017, -49.0214 )
 use_collision = true
 width = 41.9662
+height = 15.984
+depth = 1.77
+material = SubResource( 19 )
+
+[node name="CSGBox4" type="CSGBox" parent="."]
+transform = Transform( 0.999993, 0, -2.91038e-11, 0, 1, 0, 2.91038e-11, 0, 0.999993, 53.6604, 7.86247, -49.0069 )
+use_collision = true
+width = 42.508
 height = 15.984
 depth = 1.77
 material = SubResource( 19 )
