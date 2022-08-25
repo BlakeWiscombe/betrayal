@@ -51,3 +51,11 @@ width = 42.508
 height = 15.984
 depth = 1.77
 material = SubResource( 19 )
+
+[node name="CSGBox3" type="CSGBox" parent="."]
+transform = Transform( 0.999985, 0, -2.91038e-11, 0, 1, 0, 2.91038e-11, 0, 0.999985, -30.0061, 7.94753, 48.618 )
+use_collision = true
+width = 42.508
+height = 15.984
+depth = 1.77
+material = SubResource( 19 )
