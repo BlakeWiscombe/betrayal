@@ -20,6 +20,30 @@ data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, 
 [node name="Betrayal" type="Spatial"]
 transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
 
+[node name="CSGBox15" type="CSGBox" parent="."]
+transform = Transform( 0.0169627, 0, -0.999807, 0, 1, 0, 0.999807, 0, 0.0169627, 39.0002, 7.23597, -30.9893 )
+use_collision = true
+width = 34.062
+height = 17.1
+depth = 1.77
+material = SubResource( 19 )
+
+[node name="CSGBox15" type="CSGBox" parent="CSGBox15"]
+transform = Transform( -0.999907, 0, -0.00928441, 0, 1, 0, 0.00928441, 0, -0.999907, 62.7194, -0.00699997, -0.701536 )
+use_collision = true
+width = 34.062
+height = 17.1
+depth = 1.77
+material = SubResource( 19 )
+
+[node name="CSGBox9" type="CSGBox" parent="."]
+transform = Transform( -0.0148168, 0, 0.999865, 0, 1, 0, -0.999865, 0, -0.0148168, 75.731, 7.5766, -43.1906 )
+use_collision = true
+width = 13.3464
+height = 17.1
+depth = 1.77
+material = SubResource( 19 )
+
 [node name="CSGBox14" type="CSGBox" parent="."]
 transform = Transform( 0.00314082, 0, 0.999782, 0, 1, 0, -0.999782, 0, 0.00314082, -74.058, 7.7931, -47.0151 )
 use_collision = true
@@ -120,6 +144,16 @@ material/0 = SubResource( 18 )
 [node name="CollisionShape" type="CollisionShape" parent="Floor/StaticBody"]
 shape = SubResource( 12 )
 
+[node name="Floor" type="MeshInstance" parent="Floor"]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 18 )
+
+[node name="StaticBody" type="StaticBody" parent="Floor/Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor/Floor/StaticBody"]
+shape = SubResource( 12 )
+
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.0012217, 0.999999, 0, -0.999999, -0.0012217, 0, 4.53364, 0 )
 shadow_enabled = true
@@ -165,11 +199,3 @@ transform = Transform( 1, 0, -1.86265e-09, 0, 1, 0, 1.86265e-09, 0, 1, 0.404412,
 operation = 2
 width = 6.26678
 height = 8.00189
-
-[node name="CSGBox9" type="CSGBox" parent="."]
-transform = Transform( -0.0148168, 0, 0.999865, 0, 1, 0, -0.999865, 0, -0.0148168, 75.731, 7.5766, -43.1906 )
-use_collision = true
-width = 13.3464
-height = 17.1
-depth = 1.77
-material = SubResource( 19 )
