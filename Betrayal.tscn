@@ -20,6 +20,9 @@ data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, 
 [node name="Betrayal" type="Spatial"]
 transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
 
+[node name="pickup2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.999999, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 0.999999, 53.0325, 5.76536, 31.2574 )
+
 [node name="pickup" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00783157, 2.88268, -28.031 )
 
@@ -54,6 +57,12 @@ width = 42.508
 height = 15.984
 depth = 1.77
 material = SubResource( 19 )
+
+[node name="CSGBox" type="CSGBox" parent="CSGBox2"]
+transform = Transform( 1, 0, -1.16415e-10, 0, 1, 0, 1.16415e-10, 0, 1, 0, -2.91981, 0 )
+operation = 2
+width = 8.87793
+height = 10.158
 
 [node name="Floor" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
