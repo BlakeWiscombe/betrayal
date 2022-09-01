@@ -17,4 +17,8 @@ func _ready():
 
 
 func _on_Area_body_entered(body):
-	print ("Collided")
+	#rint ("Collided")
+	if (body.name == "Player"):
+		Global.current_score += 10
+		#pr (Global.current_score)
+		queue_free()

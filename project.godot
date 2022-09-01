@@ -18,6 +18,10 @@ config/name="3d game"
 run/main_scene="res://Main menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://global.gd"
+
 [input]
 
 player_forward={
