@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://wall.jpg" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://wooden wall.jpg" type="Texture" id=3]
+[ext_resource path="res://pickup.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpatialMaterial" id=19]
 albedo_texture = ExtResource( 1 )
@@ -18,6 +19,9 @@ data = PoolVector3Array( 75, 0, 50, -75, 0, 50, 75, 0, -50, -75, 0, 50, -75, 0, 
 
 [node name="Betrayal" type="Spatial"]
 transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
+
+[node name="pickup" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00783157, 2.88268, -28.031 )
 
 [node name="CSGBox6" type="CSGBox" parent="."]
 transform = Transform( 0.999972, 0, -8.73115e-11, 0, 1, 0, 8.73115e-11, 0, 0.999972, -30.0804, 7.81307, -49.2653 )
@@ -81,5 +85,29 @@ transform = Transform( 0.999985, 0, -2.91038e-11, 0, 1, 0, 2.91038e-11, 0, 0.999
 use_collision = true
 width = 42.508
 height = 15.984
+depth = 1.77
+material = SubResource( 19 )
+
+[node name="CSGBox7" type="CSGBox" parent="."]
+transform = Transform( -0.00661476, 0, -0.999972, 0, 1, 0, 0.999972, 0, -0.00661476, 75.7352, 8.11356, 28.3103 )
+use_collision = true
+width = 42.508
+height = 15.984
+depth = 1.77
+material = SubResource( 19 )
+
+[node name="CSGBox8" type="CSGBox" parent="."]
+transform = Transform( 0.00324622, 0, -0.999982, 0, 1, 0, 0.999982, 0, 0.00324622, 75.856, 8.1619, -14.6703 )
+use_collision = true
+width = 44.1384
+height = 15.9511
+depth = 1.77
+material = SubResource( 19 )
+
+[node name="CSGBox9" type="CSGBox" parent="."]
+transform = Transform( -0.0148168, 0, 0.999865, 0, 1, 0, -0.999865, 0, -0.0148168, 75.731, 7.5766, -43.1906 )
+use_collision = true
+width = 13.3464
+height = 17.1
 depth = 1.77
 material = SubResource( 19 )
