@@ -105,13 +105,13 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="CSGBox" type="CSGBox" parent="CSGBox2"]
-transform = Transform( 1, 0, -2.03727e-10, 0, 1, 0, 2.03727e-10, 0, 1, 0, -2.91981, 0 )
+transform = Transform( 1, 0, -4.07454e-10, 0, 1, 0, 4.07454e-10, 0, 1, 0, 0.979291, 0 )
 operation = 2
-width = 8.87793
-height = 10.158
+width = 5.83443
+height = 8.2863
 
 [node name="Floor" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = SubResource( 18 )
 
@@ -161,9 +161,10 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="CSGBox" type="CSGBox" parent="CSGBox8"]
+transform = Transform( 1, 0, -1.86265e-09, 0, 1, 0, 1.86265e-09, 0, 1, 0.404412, 1.32548, 0.0168114 )
 operation = 2
-width = 5.37063
-height = 5.84488
+width = 6.26678
+height = 8.00189
 
 [node name="CSGBox9" type="CSGBox" parent="."]
 transform = Transform( -0.0148168, 0, 0.999865, 0, 1, 0, -0.999865, 0, -0.0148168, 75.731, 7.5766, -43.1906 )
