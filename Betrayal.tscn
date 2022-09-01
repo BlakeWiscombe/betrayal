@@ -59,7 +59,7 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="CSGBox" type="CSGBox" parent="CSGBox2"]
-transform = Transform( 1, 0, -1.16415e-10, 0, 1, 0, 1.16415e-10, 0, 1, 0, -2.91981, 0 )
+transform = Transform( 1, 0, -2.03727e-10, 0, 1, 0, 2.03727e-10, 0, 1, 0, -2.91981, 0 )
 operation = 2
 width = 8.87793
 height = 10.158
@@ -112,6 +112,11 @@ width = 44.1384
 height = 15.9511
 depth = 1.77
 material = SubResource( 19 )
+
+[node name="CSGBox" type="CSGBox" parent="CSGBox8"]
+operation = 2
+width = 5.37063
+height = 5.84488
 
 [node name="CSGBox9" type="CSGBox" parent="."]
 transform = Transform( -0.0148168, 0, 0.999865, 0, 1, 0, -0.999865, 0, -0.0148168, 75.731, 7.5766, -43.1906 )
