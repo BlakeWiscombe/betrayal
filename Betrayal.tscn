@@ -42,6 +42,7 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="CSGBox" type="CSGBox" parent="CSGBox17"]
+transform = Transform( 1, 0, 1.86265e-09, 0, 1, 0, -1.86265e-09, 0, 1, 0, 0.126709, 0 )
 operation = 2
 width = 47.1441
 height = 17.0248
@@ -123,10 +124,13 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="pickup2" parent="." instance=ExtResource( 4 )]
-transform = Transform( 0.999999, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 0.999999, 53.0325, 5.76536, 31.2574 )
+transform = Transform( 0.999999, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 0.999999, 53.0325, 2.4364, 31.2574 )
 
 [node name="pickup" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00783157, 2.88268, -28.031 )
+
+[node name="pickup" parent="pickup" instance=ExtResource( 4 )]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 53.0891, 0.195418, 4.10238 )
 
 [node name="CSGBox6" type="CSGBox" parent="."]
 transform = Transform( 0.999972, 0, -8.73115e-11, 0, 1, 0, 8.73115e-11, 0, 0.999972, -30.0804, 7.81307, -49.2653 )
