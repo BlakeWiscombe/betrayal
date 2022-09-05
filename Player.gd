@@ -2,9 +2,9 @@ extends KinematicBody
 
 
 # Physics
-var movementSpeed = 15.0 		# How fast the player can move.
-var jumpStrength = 2.0 		# How much force used to make player jump
-var gravity = 10.0			# Gravity's strength.
+var movementSpeed = 25.0 		# How fast the player can move.
+var jumpStrength = 5.0 		# How much force used to make player jump
+var gravity = 9.75			# Gravity's strength.
 
 
 # Called when the node enters the scene tree for the first time.
