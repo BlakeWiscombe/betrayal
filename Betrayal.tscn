@@ -82,7 +82,7 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="CSGBox" type="CSGBox" parent="CSGBox12"]
-transform = Transform( 1, 0, 4.65661e-10, 0, 1, 0, -4.65661e-10, 0, 1, 16.0685, -2.00698, -0.10656 )
+transform = Transform( 1, 0, 4.65661e-10, 0, 1, 0, -4.65661e-10, 0, 1, 16.0685, -2.00698, -0.106529 )
 operation = 2
 width = 10.6501
 height = 11.1607
@@ -226,7 +226,7 @@ width = 7.40969
 height = 9.26792
 
 [node name="CSGBox18" type="CSGBox" parent="."]
-transform = Transform( 0.0398144, 0, 0.999108, 0, 1, 0, -0.999108, 0, 0.0398144, -38.5759, 7.11976, -32.4393 )
+transform = Transform( 0.0398144, 0, 0.999108, 0, 1, 0, -0.999108, 0, 0.0398144, -38.0368, 7.30601, -32.4392 )
 use_collision = true
 width = 36.0584
 height = 17.1
