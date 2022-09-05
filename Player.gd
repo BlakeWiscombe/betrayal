@@ -2,7 +2,7 @@ extends KinematicBody
 
 
 # Physics
-var movementSpeed = 10.0 		# How fast the player can move.
+var movementSpeed = 15.0 		# How fast the player can move.
 var jumpStrength = 2.0 		# How much force used to make player jump
 var gravity = 10.0			# Gravity's strength.
 
@@ -51,13 +51,13 @@ func _physics_process (delta):
 	var input = Vector2()
 	# movement inputs
 	if Input.is_action_pressed("player_forward"):
-		input.y -= 1
+		input.y -= 5
 	if Input.is_action_pressed("player_backward"):
-		input.y += 1
+		input.y += 5
 	if Input.is_action_pressed("player_left"):
-		input.x -= 1
+		input.x -= 5
 	if Input.is_action_pressed("player_right"):
-		input.x += 1
+		input.x += 5
 	# normalize the input so we can't move faster diagonally
 	input = input.normalized()
 	# get our forward and right directions

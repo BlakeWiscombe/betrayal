@@ -82,7 +82,7 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="CSGBox" type="CSGBox" parent="CSGBox12"]
-transform = Transform( 1, 0, 4.65661e-10, 0, 1, 0, -4.65661e-10, 0, 1, 15.6932, -2.00698, -0.10408 )
+transform = Transform( 1, 0, 4.65661e-10, 0, 1, 0, -4.65661e-10, 0, 1, 16.0685, -2.00698, -0.10656 )
 operation = 2
 width = 10.6501
 height = 11.1607
