@@ -1,9 +1,8 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://wall.jpg" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://wooden wall.jpg" type="Texture" id=3]
-[ext_resource path="res://pickup.tscn" type="PackedScene" id=4]
 [ext_resource path="res://roof.jpeg" type="Texture" id=5]
 [ext_resource path="res://Bullet.tscn" type="PackedScene" id=6]
 
@@ -33,9 +32,6 @@ albedo_texture = ExtResource( 1 )
 
 [node name="Betrayal" type="Spatial"]
 transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
-
-[node name="pickup3" parent="." instance=ExtResource( 4 )]
-transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 53.0969, 3.0781, -23.9286 )
 
 [node name="CSGBox17" type="CSGBox" parent="."]
 transform = Transform( -0.999624, 0, 0.0235578, 0, 1, 0, -0.0235578, 0, -0.999624, 1.19554, 7.21729, -14.0302 )
@@ -133,12 +129,6 @@ width = 24.2402
 height = 15.0703
 depth = 1.77
 material = SubResource( 19 )
-
-[node name="pickup2" parent="." instance=ExtResource( 4 )]
-transform = Transform( 0.999999, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 0.999999, 53.0325, 2.4364, 31.2574 )
-
-[node name="pickup" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00783157, 2.88268, -28.031 )
 
 [node name="CSGBox6" type="CSGBox" parent="."]
 transform = Transform( 0.999972, 0, -8.73115e-11, 0, 1, 0, 8.73115e-11, 0, 0.999972, -30.0804, 7.81307, -49.2653 )
@@ -297,4 +287,10 @@ height = 11.6784
 depth = 16.6396
 
 [node name="Bullet" parent="." instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.90317, 0 )
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 20.1476, -1.92695, 0.00562668 )
+
+[node name="Bullet2" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.999999, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 0.999999, 46.4313, -1.42071, -16.94 )
+
+[node name="Bullet3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.999997, 0, 8.73115e-11, 0, 1, 0, -8.73115e-11, 0, 0.999997, 50.4706, -1.22221, 26.6 )
