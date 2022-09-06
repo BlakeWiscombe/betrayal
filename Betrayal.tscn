@@ -261,7 +261,7 @@ height = 65.7655
 material = SubResource( 21 )
 
 [node name="CSGBox21" type="CSGBox" parent="."]
-transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -74.4099, 27.6814, -0.257543 )
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -74.4099, 27.3181, -0.257543 )
 use_collision = true
 height = 23.0891
 depth = 95.7052
