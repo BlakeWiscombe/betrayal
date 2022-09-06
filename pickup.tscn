@@ -9,7 +9,7 @@ extents = Vector3( 1, 1.70581, 1 )
 script = ExtResource( 1 )
 
 [node name="CSGCylinder" type="CSGCylinder" parent="."]
-height = 3.005
+height = 3.15805
 
 [node name="Area" type="Area" parent="CSGCylinder"]
 
