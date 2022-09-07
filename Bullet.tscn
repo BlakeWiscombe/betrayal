@@ -13,6 +13,9 @@ script = ExtResource( 2 )
 [node name="223" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.41491, 3.19441, -1.8477 )
 mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
 
 [node name="Area" type="Area" parent="223"]
 
