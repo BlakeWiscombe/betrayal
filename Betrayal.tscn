@@ -48,6 +48,12 @@ operation = 2
 width = 47.1441
 height = 17.0248
 
+[node name="CSGBox2" type="CSGBox" parent="CSGBox17"]
+transform = Transform( 1, 0, 9.31323e-09, 0, 1, 0, -9.31323e-09, 0, 1, -0.693838, 3.5499, 0.112062 )
+operation = 2
+width = 82.0372
+height = 10.2239
+
 [node name="CSGBox16" type="CSGBox" parent="."]
 transform = Transform( -0.0262437, 0, 0.999556, 0, 1, 0, -0.999556, 0, -0.0262437, 40.7655, 7.22897, 31.7061 )
 use_collision = true
