@@ -300,7 +300,7 @@ transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 20.1476, -1.9269
 transform = Transform( 0.999999, 0, 2.91038e-11, 0, 1, 0, -2.91038e-11, 0, 0.999999, 46.4313, -1.42071, -16.94 )
 
 [node name="Bullet3" parent="." instance=ExtResource( 6 )]
-transform = Transform( 0.999997, 0, 8.73115e-11, 0, 1, 0, -8.73115e-11, 0, 0.999997, 50.4706, -1.22221, 26.6 )
+transform = Transform( 0.999997, 0, 8.73115e-11, 0, 1, 0, -8.73115e-11, 0, 0.999997, 47.6698, -1.22221, 26.5992 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.08777, 0 )
