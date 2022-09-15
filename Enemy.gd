@@ -1,12 +1,10 @@
 extends Spatial
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
+onready var nav = get_parent()
+var path = []
+var path_node = 0
+var speed = 10
+onready var player = $"Player"
 
 
 func _on_Area_body_entered(body):
