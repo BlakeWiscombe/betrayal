@@ -6,11 +6,11 @@
 
 [sub_resource type="CapsuleMesh" id=1]
 material = SubResource( 3 )
-mid_height = 2.5
+mid_height = 5.0
 
 [sub_resource type="CapsuleShape" id=2]
 radius = 1.18116
-height = 2.49516
+height = 5.0
 
 [node name="Enemy" type="Spatial"]
 script = ExtResource( 1 )
