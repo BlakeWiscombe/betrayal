@@ -140,10 +140,10 @@ width = 10.8255
 height = 11.1496
 
 [node name="CSGBox10" type="CSGBox" parent="."]
-transform = Transform( 0.999784, 0, -0.019319, 0, 1, 0, 0.019319, 0, 0.999784, -63.5628, 8.27471, 48.5042 )
+transform = Transform( 0.999784, 0, -0.019319, 0, 1, 0, 0.019319, 0, 0.999784, -63.5628, 7.6636, 48.5042 )
 use_collision = true
 width = 24.2402
-height = 15.0703
+height = 16.5466
 depth = 1.77
 material = SubResource( 19 )
 
@@ -323,4 +323,5 @@ material/0 = SubResource( 25 )
 [node name="StaticBody" type="StaticBody" parent="MeshInstance"]
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+transform = Transform( 1, 0, 5.82077e-11, 0, 1, 0, -5.82077e-11, 0, 1, 0, 0, 0 )
 shape = SubResource( 26 )
