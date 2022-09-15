@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://wall.jpg" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://roof.jpeg" type="Texture" id=5]
 [ext_resource path="res://Bullet.tscn" type="PackedScene" id=6]
+[ext_resource path="res://grass_grass_0131_01_preview.jpg" type="Texture" id=7]
 
 [sub_resource type="SpatialMaterial" id=19]
 albedo_texture = ExtResource( 1 )
@@ -31,8 +32,17 @@ albedo_texture = ExtResource( 1 )
 [sub_resource type="SpatialMaterial" id=23]
 albedo_texture = ExtResource( 1 )
 
+[sub_resource type="PlaneMesh" id=24]
+size = Vector2( 400, 400 )
+
+[sub_resource type="SpatialMaterial" id=25]
+albedo_texture = ExtResource( 7 )
+
+[sub_resource type="BoxShape" id=26]
+extents = Vector3( 199.508, 2.61472, 200.393 )
+
 [node name="Betrayal" type="Spatial"]
-transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, -0.33866, -25.9997 )
+transform = Transform( 0.000279278, 0, -1, 0, 1, 0, 1, 0, 0.000279278, -8.90252, 6.05013, -25.9997 )
 
 [node name="CSGBox17" type="CSGBox" parent="."]
 transform = Transform( -0.999624, 0, 0.0235578, 0, 1, 0, -0.0235578, 0, -0.999624, 1.19554, 7.21729, -14.0302 )
@@ -304,3 +314,13 @@ transform = Transform( 0.999997, 0, 8.73115e-11, 0, 1, 0, -8.73115e-11, 0, 0.999
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.08777, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, -2.57228, 0 )
+mesh = SubResource( 24 )
+material/0 = SubResource( 25 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+shape = SubResource( 26 )
