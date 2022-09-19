@@ -76,4 +76,4 @@ func _physics_process (delta):
 	if Input.is_action_pressed("jump") and is_on_floor():
 		playerVelocity.y = jumpStrength
 	if Global.player_health == 0:
-		get_tree().change_scene("res://Main menu.tscn")
+		get_tree().change_scene("res://Game Over.tscn")
