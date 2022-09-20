@@ -19,15 +19,16 @@ shape = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
 environment = ExtResource( 1 )
 current = true
+fov = 100.0
 
 [node name="Playerscore" type="Label" parent="Camera"]
-margin_left = 972.0
-margin_top = 573.0
+margin_left = 954.0
+margin_top = 561.0
 margin_right = 1025.0
 margin_bottom = 597.0
 
 [node name="HealthBar" type="Label" parent="Camera"]
 margin_left = 3.0
-margin_top = 571.0
-margin_right = 56.0
+margin_top = 560.0
+margin_right = 71.0
 margin_bottom = 590.0
