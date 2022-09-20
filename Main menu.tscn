@@ -8,7 +8,7 @@
 margin_right = 1023.0
 margin_bottom = 611.0
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Start game" type="Button" parent="VBoxContainer"]
 margin_right = 1023.0
 margin_bottom = 20.0
 text = "Start game"
@@ -33,10 +33,11 @@ margin_right = 1023.0
 margin_bottom = 68.0
 text = "Options"
 
-[node name="Button4" type="Button" parent="VBoxContainer"]
+[node name="Quit" type="Button" parent="VBoxContainer"]
 margin_top = 72.0
 margin_right = 1023.0
 margin_bottom = 92.0
 text = "Quit"
 
-[connection signal="pressed" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start game" to="VBoxContainer/Start game" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer/Start game" method="_on_Quit_pressed"]
