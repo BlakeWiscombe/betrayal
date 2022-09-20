@@ -21,17 +21,13 @@ environment = ExtResource( 1 )
 current = true
 
 [node name="Playerscore" type="Label" parent="Camera"]
-margin_right = 40.0
-margin_bottom = 14.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+margin_left = 972.0
+margin_top = 573.0
+margin_right = 1025.0
+margin_bottom = 597.0
 
 [node name="HealthBar" type="Label" parent="Camera"]
 margin_left = 3.0
 margin_top = 571.0
 margin_right = 56.0
 margin_bottom = 590.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
