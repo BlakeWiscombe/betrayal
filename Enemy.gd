@@ -9,7 +9,7 @@ onready var player = $"../../Player"
 
 func _on_Area_body_entered(body):
 	if (body.name == "Player"):
-		Global.player_health -= 100
+		Global.player_health -= 25
 
 
 func _physics_process(delta):
