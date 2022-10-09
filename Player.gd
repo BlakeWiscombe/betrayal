@@ -1,5 +1,7 @@
 extends KinematicBody
-
+onready var bulletScene = preload("res://bullet.tscn")
+onready var bulletSpawn = get_node("Camera/bulletSpawn")
+var ammo : int = 15
 
 # Physics
 var movementSpeed = 25.0 		# How fast the player can move.
@@ -43,6 +45,9 @@ func _process (delta):
 	mouseDelta = Vector2()
 	$Camera/Playerscore.text = str(Global.current_score)
 	$Camera/HealthBar.text = str(Global.player_health)
+	
+	if Input.is_action_just_pressed("shoot"):
+		shoot()
 
 # called every physics step
 func _physics_process (delta):
@@ -77,3 +82,11 @@ func _physics_process (delta):
 		playerVelocity.y = jumpStrength
 	if Global.player_health == 0:
 		get_tree().change_scene("res://Game Over.tscn")
+
+func shoot ():
+	var bullet = bulletScene.instance()
+	get_node("/root/Betrayal").add_child(bullet)
+	bullet.global_transform = bulletSpawn.global_transform
+	bullet.scale = Vector3(0.1,0.1,0.1)
+
+	ammo -= 1

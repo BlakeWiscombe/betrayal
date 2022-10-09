@@ -32,3 +32,6 @@ margin_left = 3.0
 margin_top = 560.0
 margin_right = 71.0
 margin_bottom = 590.0
+
+[node name="bulletSpawn" type="Spatial" parent="Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.57711 )

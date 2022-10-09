@@ -1,26 +1,20 @@
-extends Spatial
+extends Area
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var speed : float = 30.0
+var damage : int = 1
+
+func _process (delta):
+	# move the bullet forwards
+	translation += global_transform.basis.z * speed * delta
+	
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _on_Bullet_body_entered(body):
+	if body.has_method("take_damage"):
+		body.take_damage(damage)
+		destroy()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
-
-
-func _on_Area_body_entered(body):
-			#rint ("Collided")
-	if (body.name == "Player"):
-		Global.current_score += 30
-		#pr (Global.current_score)
-		queue_free()
+func destroy ():
+	# destroys the bullet
+	queue_free()
