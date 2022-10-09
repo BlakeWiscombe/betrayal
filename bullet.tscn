@@ -10,7 +10,7 @@ albedo_color = Color( 0, 0, 0, 1 )
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0, 0, 0, 1 )
 
-[node name="bullet" type="Area"]
+[node name="Bullet" type="Area"]
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 1 )
