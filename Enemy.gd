@@ -3,7 +3,7 @@ extends KinematicBody
 onready var nav = get_parent()
 var path = []
 var path_node = 0
-var speed = 10
+var speed = 50
 onready var player = $"../../Player"
 var health = 100
 
