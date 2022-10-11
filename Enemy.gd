@@ -5,6 +5,7 @@ var path = []
 var path_node = 0
 var speed = 10
 onready var player = $"../../Player"
+var health = 100
 
 
 func _on_Area_body_entered(body):
@@ -27,3 +28,9 @@ func move_to(target_pos):
 
 func _on_Timer_timeout():
 	move_to(player.global_transform.origin)
+
+func take_damage(damage):
+	print("ouch")
+	health -= 50
+	if health <=0:
+		queue_free()
