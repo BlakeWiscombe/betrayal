@@ -6,11 +6,14 @@
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1023.0
-margin_bottom = 344.0
+margin_bottom = 411.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Start Game" type="Button" parent="VBoxContainer"]
 margin_right = 1023.0
-margin_bottom = 83.0
+margin_bottom = 99.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Start game"
@@ -21,9 +24,9 @@ __meta__ = {
 scene_to_load = "res://Betrayal.tscn"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
-margin_top = 87.0
+margin_top = 103.0
 margin_right = 1023.0
-margin_bottom = 170.0
+margin_bottom = 203.0
 size_flags_vertical = 3
 text = "Mission Select"
 __meta__ = {
@@ -31,16 +34,16 @@ __meta__ = {
 }
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
-margin_top = 174.0
+margin_top = 207.0
 margin_right = 1023.0
-margin_bottom = 257.0
+margin_bottom = 307.0
 size_flags_vertical = 3
 text = "Options"
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
-margin_top = 261.0
+margin_top = 311.0
 margin_right = 1023.0
-margin_bottom = 344.0
+margin_bottom = 411.0
 size_flags_vertical = 3
 text = "Quit"
 

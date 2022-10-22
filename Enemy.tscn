@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Enemy.gd" type="Script" id=1]
+[ext_resource path="res://main-qimg-bb3b2b02c37c019bf3a7da13fa0ded2c-lq.jpeg" type="Texture" id=2]
 
 [sub_resource type="SpatialMaterial" id=3]
-albedo_color = Color( 0, 0.0862745, 1, 1 )
+albedo_texture = ExtResource( 2 )
 
 [sub_resource type="CapsuleMesh" id=1]
 material = SubResource( 3 )
@@ -16,8 +17,8 @@ radius = 1.18116
 height = 5.0
 
 [sub_resource type="CapsuleShape" id=5]
-radius = 1.07495
-height = 3.60039
+radius = 1.3107
+height = 3.66281
 
 [node name="Enemy" type="KinematicBody"]
 script = ExtResource( 1 )
