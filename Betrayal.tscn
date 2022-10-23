@@ -63,6 +63,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05459, 4.32295, 2.41159 )
 [node name="Navigation" type="Navigation" parent="."]
 
 [node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Navigation"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 navmesh = SubResource( 27 )
 
 [node name="CSGBox14" type="CSGBox" parent="Navigation/NavigationMeshInstance"]
@@ -339,4 +340,4 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="Enemy" parent="Navigation" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.32451, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.61424, 0 )
