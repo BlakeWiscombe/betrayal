@@ -3,7 +3,7 @@
 [ext_resource path="res://default_env.tres" type="Environment" id=1]
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://armmesh.tscn" type="PackedScene" id=3]
-[ext_resource path="res://akm-assault-rifle-game-ready-model/source/AKM_low7.fbx" type="PackedScene" id=4]
+[ext_resource path="res://desert-eagle-gun/source/Desert_Eagle.fbx" type="PackedScene" id=4]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.75
@@ -27,8 +27,8 @@ environment = ExtResource( 1 )
 current = true
 fov = 100.0
 
-[node name="AKM_low7" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.158437, -0.415232, -1.43148 )
+[node name="Desert_Eagle" parent="Camera" instance=ExtResource( 4 )]
+transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.160095, -0.422224, -1.15179 )
 
 [node name="Playerscore" type="Label" parent="Camera"]
 margin_left = 917.0
