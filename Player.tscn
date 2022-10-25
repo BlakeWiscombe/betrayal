@@ -28,7 +28,7 @@ current = true
 fov = 100.0
 
 [node name="AKM_low7" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.158437, -0.443033, -1.36479 )
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.158437, -0.415232, -1.43148 )
 
 [node name="Playerscore" type="Label" parent="Camera"]
 margin_left = 917.0
