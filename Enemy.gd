@@ -34,3 +34,4 @@ func take_damage(damage):
 	health -= 50
 	if health <=0:
 		queue_free()
+		get_tree().change_scene("res://Main menu.tscn")

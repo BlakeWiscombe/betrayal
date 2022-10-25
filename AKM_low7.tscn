@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://akm-assault-rifle-game-ready-model/source/AKM_low7.fbx" type="PackedScene" id=1]
+
+[node name="AKM_low7" instance=ExtResource( 1 )]

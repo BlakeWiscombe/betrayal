@@ -25,6 +25,7 @@ var mouseDelta : Vector2 = Vector2()			# How much the mouse has moved since last
 # player components
 onready var camera = get_node("Camera")		# "attach" the camera to access from script.
 
+
 # called when an input is detected
 func _input (event):
 	# did the mouse move?
@@ -48,6 +49,7 @@ func _process (delta):
 	
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
+	
 
 # called every physics step
 func _physics_process (delta):
