@@ -47,7 +47,7 @@ func _process (delta):
 	$Camera/Playerscore.text = str(Global.current_score)
 	$Camera/HealthBar.text = str(Global.player_health)
 	
-	if Input.is_action_pressed("shoot"):
+	if Input.is_action_just_pressed("shoot"):
 		shoot()
 	
 
