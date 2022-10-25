@@ -28,7 +28,7 @@ current = true
 fov = 100.0
 
 [node name="Desert_Eagle" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.160095, -0.422224, -1.15179 )
+transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.149609, -0.422224, -1.13852 )
 
 [node name="Playerscore" type="Label" parent="Camera"]
 margin_left = 917.0
