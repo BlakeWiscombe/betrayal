@@ -27,11 +27,14 @@ environment = ExtResource( 1 )
 current = true
 fov = 100.0
 
+[node name="bulletSpawn2" type="Spatial" parent="Camera"]
+transform = Transform( -0.986564, 0, 0.163378, 0, 1, 0, -0.163378, 0, -0.986564, -0.208135, -0.314556, -1.57021 )
+
 [node name="Desert_Eagle2" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243332, -0.455931, -1.17462 )
+transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243015, -0.461151, -1.1423 )
 
 [node name="Desert_Eagle" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.149609, -0.422224, -1.13852 )
+transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.149609, -0.451181, -1.13852 )
 
 [node name="Playerscore" type="Label" parent="Camera"]
 margin_left = 917.0
@@ -52,7 +55,7 @@ __meta__ = {
 }
 
 [node name="bulletSpawn" type="Spatial" parent="Camera"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -2.57711 )
+transform = Transform( -0.15252, 0, 0.9883, 0, 1, 0, -0.9883, 0, -0.15252, 0.096509, -0.38497, -1.74026 )
 
 [node name="armmesh" parent="Camera" instance=ExtResource( 3 )]
 transform = Transform( 0.133884, 0.549823, -1.38916, -0.233352, 1.38531, 0.525807, 1.47568, 0.169178, 0.209182, 0.181331, -0.64852, -0.573708 )
