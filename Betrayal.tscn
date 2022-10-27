@@ -58,7 +58,7 @@ shadow_enabled = true
 shadow_color = Color( 1, 1, 1, 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04821, 4.32295, 25.2611 )
+transform = Transform( 0.0913799, 0, 0.995815, 0, 1, 0, -0.995815, 0, 0.0913799, 56.0323, 4.32295, -2.47614 )
 
 [node name="Navigation" type="Navigation" parent="."]
 
@@ -339,7 +339,7 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="Enemy" parent="Navigation" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8262, 5.61424, -0.00804901 )
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -39.0836, 5.61424, 15.4684 )
 
 [node name="Enemy2" parent="Navigation" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.6739, 5.15595, 0.0135937 )
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, -41.2728, 5.15595, -0.0115252 )
