@@ -28,7 +28,7 @@ current = true
 fov = 100.0
 
 [node name="Desert_Eagle2" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, 0.0944519, -0.0721569, -1.30787 )
+transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243332, -0.455931, -1.17462 )
 
 [node name="Desert_Eagle" parent="Camera" instance=ExtResource( 4 )]
 transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.149609, -0.422224, -1.13852 )
