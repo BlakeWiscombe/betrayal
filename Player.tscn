@@ -27,6 +27,9 @@ environment = ExtResource( 1 )
 current = true
 fov = 100.0
 
+[node name="bulletSpawn" type="Spatial" parent="Camera"]
+transform = Transform( -0.15252, 0, 0.9883, 0, 1, 0, -0.9883, 0, -0.15252, 0.096509, -0.384968, -1.74026 )
+
 [node name="Desert_Eagle2" parent="Camera" instance=ExtResource( 4 )]
 transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243015, -0.461151, -1.1423 )
 
@@ -50,9 +53,6 @@ margin_bottom = 590.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="bulletSpawn" type="Spatial" parent="Camera"]
-transform = Transform( -0.15252, 0, 0.9883, 0, 1, 0, -0.9883, 0, -0.15252, 0.096509, -0.38497, -1.74026 )
 
 [node name="armmesh" parent="Camera" instance=ExtResource( 3 )]
 transform = Transform( 0.133884, 0.549823, -1.38916, -0.233352, 1.38531, 0.525807, 1.47568, 0.169178, 0.209182, 0.181331, -0.64852, -0.573708 )

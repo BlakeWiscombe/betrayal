@@ -339,7 +339,7 @@ depth = 1.77
 material = SubResource( 19 )
 
 [node name="Enemy" parent="Navigation" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.61424, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8262, 5.61424, -0.00804901 )
 
 [node name="Enemy2" parent="Navigation" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.75463, 5.15595, 0.00244522 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.6739, 5.15595, 0.0135937 )
