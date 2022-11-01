@@ -28,7 +28,7 @@ current = true
 fov = 100.0
 
 [node name="bulletSpawn" type="Spatial" parent="Camera"]
-transform = Transform( -0.15252, 0, 0.9883, 0, 1, 0, -0.9883, 0, -0.15252, 0.096509, -0.42334, -1.74026 )
+transform = Transform( -0.15252, 0, 0.9883, 0, 1, 0, -0.9883, 0, -0.15252, 0.125566, -0.34796, -1.74026 )
 
 [node name="Desert_Eagle2" parent="Camera" instance=ExtResource( 4 )]
 transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243015, -0.461151, -0.940201 )
