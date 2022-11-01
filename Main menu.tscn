@@ -45,4 +45,5 @@ size_flags_vertical = 3
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Start Game" to="VBoxContainer/Start Game" method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="VBoxContainer/Start Game" method="_on_Button3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="VBoxContainer/Start Game" method="_on_Quit_pressed"]
