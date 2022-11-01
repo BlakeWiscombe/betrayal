@@ -92,6 +92,4 @@ func shoot ():
 	get_node("/root/Betrayal").add_child(bullet)
 	bullet.global_transform = bulletSpawn.global_transform
 	bullet.scale = Vector3(0.1,0.1,0.1)
-	
-
 	ammo -= 1

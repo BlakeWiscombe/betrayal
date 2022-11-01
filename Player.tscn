@@ -31,10 +31,10 @@ fov = 100.0
 transform = Transform( -0.15252, 0, 0.9883, 0, 1, 0, -0.9883, 0, -0.15252, 0.096509, -0.42334, -1.74026 )
 
 [node name="Desert_Eagle2" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243015, -0.461151, -1.1423 )
+transform = Transform( -0.149478, 0, 0.0125074, 0, 0.15, 0, -0.0125074, 0, -0.149478, -0.243015, -0.461151, -0.940201 )
 
 [node name="Desert_Eagle" parent="Camera" instance=ExtResource( 4 )]
-transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.149609, -0.451181, -1.13852 )
+transform = Transform( -0.148773, 0, -0.0191453, 0, 0.15, 0, 0.0191453, 0, -0.148773, 0.149609, -0.451181, -0.93264 )
 
 [node name="Playerscore" type="Label" parent="Camera"]
 margin_left = 917.0
@@ -52,7 +52,7 @@ margin_right = 111.0
 margin_bottom = 590.0
 
 [node name="armmesh" parent="Camera" instance=ExtResource( 3 )]
-transform = Transform( 0.133884, 0.549823, -1.38916, -0.233352, 1.38531, 0.525807, 1.47568, 0.169178, 0.209182, 0.181331, -0.64852, -0.573708 )
+transform = Transform( 0.133884, 0.549823, -1.38916, -0.233352, 1.38531, 0.525807, 1.47568, 0.169178, 0.209182, 0.181331, -0.64852, -0.381844 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
