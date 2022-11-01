@@ -44,8 +44,8 @@ func _process (delta):
   
 	# reset the mouse delta vector
 	mouseDelta = Vector2()
-	$Camera/Playerscore.text = str(Global.current_score)
 	$Camera/HealthBar.text = str(Global.player_health)
+	$Camera/Playerscore.text = str(Global.current_score)
 	
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
