@@ -16,9 +16,10 @@ func _ready():
 #	pass
 
 
+
 func _on_Area_body_entered(body):
-	#rint ("Collided")
+			#rint ("Collided")
 	if (body.name == "Player"):
-		Global.current_score += 10
+		Global.current_score += 30
 		#pr (Global.current_score)
 		queue_free()
