@@ -8,6 +8,7 @@ onready var player = $"../../Player"
 var health = 100
 
 
+
 func _on_Area_body_entered(body):
 	if (body.name == "Player"):
 		Global.player_health -= 25
@@ -20,10 +21,12 @@ func _physics_process(delta):
 			path_node +=1
 		else:
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
+		
 			
 func move_to(target_pos):
 	path = nav.get_simple_path(global_transform.origin, target_pos)
 	path_node = 0
+	#player.get_tranform().get_translation()
 
 
 func _on_Timer_timeout():
@@ -35,3 +38,5 @@ func take_damage(damage):
 	if health <=0:
 		queue_free()
 		get_tree().change_scene("res://Main menu.tscn")
+		
+

@@ -5,7 +5,7 @@
 [ext_resource path="res://wooden wall.jpg" type="Texture" id=3]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://roof.jpeg" type="Texture" id=5]
-[ext_resource path="res://Bullet.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemybullet.tscn" type="PackedScene" id=6]
 [ext_resource path="res://grass_grass_0131_01_preview.jpg" type="Texture" id=7]
 [ext_resource path="res://pickup.tscn" type="PackedScene" id=8]
 
