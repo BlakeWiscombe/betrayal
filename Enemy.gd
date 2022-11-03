@@ -9,6 +9,8 @@ var health = 100
 
 
 
+
+
 func _on_Area_body_entered(body):
 	if (body.name == "Player"):
 		Global.player_health -= 25
