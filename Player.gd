@@ -68,6 +68,8 @@ func _physics_process (delta):
 		input.x -= 5
 	if Input.is_action_pressed("player_right"):
 		input.x += 5
+	if Input.is_action_pressed("Sprint"):
+		movementSpeed += 2
 	# normalize the input so we can't move faster diagonally
 	input = input.normalized()
 	# get our forward and right directions
@@ -93,3 +95,6 @@ func shoot ():
 	bullet.global_transform = bulletSpawn.global_transform
 	bullet.scale = Vector3(0.1,0.1,0.1)
 	ammo -= 1
+
+func Sprint ():
+	var movement
