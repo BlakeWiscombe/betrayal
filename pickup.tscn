@@ -15,3 +15,5 @@ height = 3.15805
 
 [node name="CollisionShape" type="CollisionShape" parent="CSGCylinder/Area"]
 shape = SubResource( 1 )
+
+[connection signal="body_entered" from="CSGCylinder/Area" to="." method="_on_Area_body_entered"]
