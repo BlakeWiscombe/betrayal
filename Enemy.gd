@@ -40,7 +40,7 @@ func _on_Timer_timeout():
 #How much damage the enemy takes everytime they are hit with a bullet, if health = 0 the enemy disappers from the game
 func take_damage(damage):
 	print("ouch")
-	health -= 50
+	health -= 50 #Defined damage that the enemy will take whenever they are hit with the bullet from the player
 	if health <=0:
 		queue_free()
 		get_tree().change_scene("res://Main menu.tscn")

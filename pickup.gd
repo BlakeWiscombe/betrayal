@@ -16,10 +16,10 @@ func _ready():
 #	pass
 
 
-
+#Defining what happens when the player collides with the pick up
 func _on_Area_body_entered(body):
 			#rint ("Collided")
 	if (body.name == "Player"):
-		Global.current_score += 30
+		Global.current_score += 30 #How much the score increases by when the player hits this
 		#pr (Global.current_score)
-		queue_free()
+		queue_free() #Deleted from the game to help the processing power

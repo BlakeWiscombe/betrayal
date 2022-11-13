@@ -9,9 +9,9 @@ func _process (delta):
 	translation -= global_transform.basis.z * speed * delta
 	
 
-
+#What happens when the hitbox of the player bullet collides with the enemy
 func _on_Bullet_body_entered(body):
-	if body.has_method("take_damage"):
+	if body.has_method("take_damage"): #Allows the enemy to be destroyed
 		body.take_damage(damage)
 		destroy()
 

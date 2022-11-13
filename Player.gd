@@ -46,7 +46,7 @@ func _process (delta):
 	mouseDelta = Vector2()
 	$Camera/HealthBar.text = str(Global.player_health)
 	$Camera/Playerscore.text = str(Global.current_score)
-	
+	#What needs to be pressed to execute the 'shoot' functionality
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
 	
@@ -88,13 +88,13 @@ func _physics_process (delta):
 		playerVelocity.y = jumpStrength
 	if Global.player_health == 0:
 		get_tree().change_scene("res://Game Over.tscn")
-
+#Determining the position and direction of the bullets
 func shoot ():
 	var bullet = bulletScene.instance()
 	get_node("/root/Betrayal").add_child(bullet)
 	bullet.global_transform = bulletSpawn.global_transform
 	bullet.scale = Vector3(0.1,0.1,0.1)
 	ammo -= 1
-
+#Defining the ability to sprint 
 func Sprint ():
 	var movement
